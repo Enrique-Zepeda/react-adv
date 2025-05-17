@@ -26,7 +26,7 @@ export function FormikComponents() {
           jobType: Yup.string().notOneOf(["it-jr"], "Esta opcion no es permitida").required("Requerido"),
         })}
       >
-        {(formik) => (
+        {() => (
           <Form>
             <label htmlFor="firstName">First Name</label>
             <Field name="firstName" type="text" />
